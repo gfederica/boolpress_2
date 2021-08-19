@@ -21,4 +21,8 @@ Route::namespace('Api')
         // rotta show del singlepost
         Route::get('posts/{slug}', 'PostController@show');
 
-    });
+        //rotta mail
+        Route::post('utentes', 'UtenteController@store');
+
+
+});
